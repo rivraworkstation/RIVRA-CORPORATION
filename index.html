@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rivra Corporation — Home</title>
+  <meta name="description" content="Rivra Corporation delivers premium technology solutions trusted by enterprises worldwide." />
+  <meta name="keywords" content="Rivra Corporation, enterprise software, technology solutions" />
+  <meta property="og:title" content="Rivra Corporation" />
+  <meta property="og:description" content="Where vision meets precision." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,0 100,25 100,75 50,100 0,75 0,25' fill='%230A0A0C' stroke='%23C9A84C' stroke-width='6'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='%23C9A84C' font-family='serif' font-weight='bold'>R</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Cursor -->
+  <div id="cursor-outer"></div>
+  <div id="cursor-inner"></div>
+
+  <!-- Three.js Canvas -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="Rivra logo cropped.jpeg" width="200" height="70"> 
+    </a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="download.html">Download</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="download.html" class="nav-cta">Download</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="download.html">Download</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE -->
+  <div class="page-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-eyebrow reveal">
+          <span></span> Premier Enterprise Solutions
+        </div>
+        <h1 class="reveal reveal-delay-1">
+          Welcome to<br><em>Rivra</em> Corporation
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          Where vision meets precision. We build the infrastructure of tomorrow — powerful, elegant, and built to last.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="download.html" class="btn btn-gold">Download Now &rarr;</a>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-scroll">Scroll</div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section overview" id="overview">
+      <div class="section-inner">
+        <div class="overview-grid">
+          <div>
+            <div class="section-label reveal">About Rivra</div>
+            <h2 class="section-title reveal reveal-delay-1">Engineering the<br><em>Future</em></h2>
+            <div class="gold-line reveal reveal-delay-1"></div>
+            <p class="section-sub reveal reveal-delay-2">
+              Rivra Corporation is a global technology company delivering enterprise-grade software, intelligent platforms, and precision-engineered digital tools trusted by industry leaders worldwide.
+            </p>
+            <p class="section-sub reveal reveal-delay-2" style="margin-top:16px;">
+              With over a decade of innovation, we fuse cutting-edge engineering with elegant design to create solutions that perform at scale and endure the test of time.
+            </p>
+            <div class="overview-stats">
+              <div class="stat-card reveal reveal-delay-1">
+                <div class="num" data-count="5" data-suffix="+">0+</div>
+                <div class="label">Global Clients</div>
+              </div>
+              <div class="stat-card reveal reveal-delay-2">
+                <div class="num" data-count="6" data-suffix="months">0months</div>
+                <div class="label">In Industry</div>
+              </div>
+              <div class="stat-card reveal reveal-delay-3">
+                <div class="num" data-count="99" data-suffix="%">0%</div>
+                <div class="label">Uptime SLA</div>
+              </div>
+              <div class="stat-card reveal reveal-delay-4">
+                <div class="num" data-count="48" data-suffix="+">0+</div>
+                <div class="label">Cities</div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-visual reveal reveal-delay-2">
+            <div class="hexagon-visual">
+              <div class="hex-ring"></div>
+              <div class="hex-ring"></div>
+              <div class="hex-ring"></div>
+              <div class="hex-center">RC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-inner">
+        <div class="section-label reveal">What We Do</div>
+        <h2 class="section-title reveal reveal-delay-1">Core <em>Services</em></h2>
+        <div class="gold-line reveal reveal-delay-1"></div>
+        <div class="services-grid">
+          <div class="gold-card service-card reveal reveal-delay-1">
+            <div class="service-icon">&#9670;</div>
+            <h3>Enterprise Software</h3>
+            <p>Bespoke enterprise platforms engineered for reliability, performance, and seamless integration with your existing infrastructure.</p>
+            <a href="download.html" class="arrow">Explore <span>&#8594;</span></a>
+          </div>
+          <div class="gold-card service-card reveal reveal-delay-2">
+            <div class="service-icon">&#9632;</div>
+            <h3>IoT Devices</h3>
+            <p>Real-world problem solving devices</p>
+            <a href="about.html" class="arrow">Learn more <span>&#8594;</span></a>
+          </div>
+          <div class="gold-card service-card reveal reveal-delay-3">
+            <div class="service-icon">&#9650;</div>
+            <h3>AI & Analytics</h3>
+            <p>Intelligent data pipelines and AI-powered analytics that transform raw information into strategic insight and competitive advantage.</p>
+            <a href="contact.html" class="arrow">Get started <span>&#8594;</span></a>
+          </div>
+          <div class="gold-card service-card reveal reveal-delay-2">
+            <div class="service-icon">&#9671;</div>
+            <h3>Digital Consulting</h3>
+            <p>Strategic consulting and transformation roadmaps that align technology investments with long-term business objectives and market opportunities.</p>
+            <a href="contact.html" class="arrow">Consult us <span>&#8594;</span></a>
+          </div>
+          <div class="gold-card service-card reveal reveal-delay-3">
+            <div class="service-icon">&#9633;</div>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock dedicated support with guaranteed response times, ensuring your operations run smoothly without interruption.</p>
+            <a href="contact.html" class="arrow">Contact <span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section" style="background: var(--bg2); padding: 80px 5%;">
+      <div class="section-inner" style="text-align:center;">
+        <div class="section-label reveal" style="justify-content:center; display:flex;">Ready to Begin</div>
+        <h2 class="section-title reveal reveal-delay-1" style="margin: 0 auto;">Download Rivra <em>Today</em></h2>
+        <div class="gold-line reveal reveal-delay-1" style="margin: 18px auto;"></div>
+        <p class="section-sub reveal reveal-delay-2" style="margin: 0 auto 40px; text-align:center; max-width:480px;">
+          Experience the Rivra platform — precision-engineered for the demands of modern enterprise. Free to try, built to scale.
+        </p>
+        <a href="download.html" class="btn btn-gold reveal reveal-delay-3">Get the Software &rarr;</a>
+      </div>
+    </section>
+
+  </div><!-- .page-content -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="Rivra logo cropped.jpeg" width="200" height="70">
+                  </a>
+          <p>Delivering precision-engineered technology solutions that power the enterprises of tomorrow.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="download.html">Download</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#">Enterprise Software</a>
+          <a href="#">Cloud Architecture</a>
+          <a href="#">AI & Analytics</a>
+          <a href="#">Security</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:corporationrivra@gmail.com">corporationrivra@gmail.com</a>
+          <a href="contact.html">Send Message</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rivra Corporation. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="Twitter">X</a>
+          <a href="#" title="GitHub">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

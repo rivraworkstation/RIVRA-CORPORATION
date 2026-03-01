@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rivra Corporation — Contact Us</title>
+  <meta name="description" content="Contact Rivra Corporation — get in touch with our team for enterprise solutions, support, and partnerships." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,0 100,25 100,75 50,100 0,75 0,25' fill='%230A0A0C' stroke='%23C9A84C' stroke-width='6'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='%23C9A84C' font-family='serif' font-weight='bold'>R</text></svg>" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="cursor-outer"></div>
+  <div id="cursor-inner"></div>
+  <canvas id="three-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="Rivra logo cropped.jpeg" width="200" height="70" alt="Rivra Logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="download.html">Download</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="download.html" class="nav-cta">Download</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="download.html">Download</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-content">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="section-label reveal">Get In Touch</div>
+        <h1 class="reveal reveal-delay-1"><em>Contact</em><br>Our Team</h1>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="contact-grid">
+
+          <!-- LEFT INFO -->
+          <div class="reveal">
+            <h3>Let's Build<br>Something <em style="color:var(--gold);">Together</em></h3>
+            <div class="gold-line" style="margin:18px 0 24px;"></div>
+
+            <p>
+              Whether you're exploring Rivra for your enterprise, need support,
+              or want to discuss a partnership — we’re here to help.
+            </p>
+
+            <div class="contact-detail reveal reveal-delay-1">
+              <div class="icon">&#9993;</div>
+              <div class="text">
+                <strong>Email</strong>
+                <span>corporationrivra@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-detail reveal reveal-delay-2">
+              <div class="icon">&#9680;</div>
+              <div class="text">
+                <strong>Support Hours</strong>
+                <span>24 / 7 — 365 days</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: GOOGLE FORM ONLY -->
+          <div class="reveal reveal-delay-1">
+            <div class="section-label">Send a Message</div>
+
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSczqPucxS20cLDIjvxsWUZcwRy5vPXR_Dykjj0vvNJ25vXKbg/viewform?embedded=true"
+              width="100%"
+              height="1500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              style="border-radius:12px; background:#fff;">
+              Loading…
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background:var(--bg2);">
+      <div class="section-inner">
+        <div class="section-label reveal">FAQ</div>
+        <h2 class="section-title reveal reveal-delay-1">Common <em>Questions</em></h2>
+        <div class="gold-line reveal reveal-delay-1"></div>
+
+        <div style="max-width:720px; margin-top:48px;">
+          <div class="faq-item gold-card reveal reveal-delay-1" onclick="toggleFaq(this)">
+            <div style="display:flex; justify-content:space-between;">
+              <span>How quickly can we get onboarded?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <p class="faq-body">
+              Most enterprise clients are onboarded within 2–4 weeks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2025 Rivra Corporation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(el) {
+      const body = el.querySelector('.faq-body');
+      const icon = el.querySelector('.faq-icon');
+      const open = body.style.display === 'block';
+      body.style.display = open ? 'none' : 'block';
+      icon.textContent = open ? '+' : '−';
+    }
+  </script>
+
+</body>
+</html>
